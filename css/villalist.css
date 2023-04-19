@@ -1,0 +1,20 @@
+.villa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.villa-title h1 {
+    display: block;
+    color: #c19c81;
+}
+
+.villa-title p {
+    padding-right: 2rem;
+}
+
+.villa-thumbnail {
+    border: 2px solid black;
+    padding: 1rem;
+}

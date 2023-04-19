@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 body {
     margin: 0;
     min-height: 100vh;
+    font-family: 'EB Garamond', serif;
+    background-color: #fffdfb;
 }
 
 /* header start */
@@ -24,18 +28,29 @@ nav {
     gap: 2rem;
     font-size: 1.2rem;
 }
+
 /* header end */
 
-/* main start*/
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-/* main end*/
 
 /* footer start */
 footer {
-    height: 4rem;
     background-color: #302d2c;
+    text-align: center;
+}
+
+#footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+footer h2 {
+    color: #f4e8da;
+}
+
+#footer-info p {
+    color: #f4e8da;
 }
 /* footer end*/

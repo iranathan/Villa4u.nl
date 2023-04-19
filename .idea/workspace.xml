@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/villalist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/villalist.view.php" afterDir="false" />
+    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="villa list and database">
+      <change afterPath="$PROJECT_DIR$/css/villalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/unnamed.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/headerfooter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/villalist.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/villalist.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -57,12 +61,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/image" />
       <recent name="C:\Users\irana\Documents\GitHub\Villa4u.nl" />
       <recent name="C:\Users\irana\Documents\GitHub\Villa4u.nl\image" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.villalist.php">
     <configuration name="database.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/database.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 8.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="villalist.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/villalist.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP 8.1" />
@@ -72,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.villalist.php" />
         <item itemvalue="PHP Script.database.php" />
       </list>
     </recent_temporary>
@@ -86,8 +100,16 @@
       <updated>1681727056502</updated>
       <workItem from="1681727057506" duration="9000" />
       <workItem from="1681727183251" duration="4790000" />
-      <workItem from="1681893688935" duration="3361000" />
+      <workItem from="1681893688935" duration="10036000" />
     </task>
+    <task id="LOCAL-00001" summary="villa list and database">
+      <created>1681898149149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681898149149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +125,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="villa list and database" />
+    <option name="LAST_COMMIT_MESSAGE" value="villa list and database" />
   </component>
 </project>
