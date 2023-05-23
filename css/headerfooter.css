@@ -5,6 +5,7 @@ body {
     min-height: 100vh;
     font-family: 'EB Garamond', serif;
     background-color: #fffdfb;
+    max-width: 100%;
 }
 
 /* header start */
@@ -29,7 +30,10 @@ nav {
     gap: 2rem;
     font-size: 1.2rem;
 }
-
+nav a{
+    color: #f4e8da;
+    text-decoration: none;
+}
 /* header end */
 
 

@@ -11,10 +11,10 @@
 </head>
 <body>
     <header>
-        <img src="image/lightlogosmall.png">
+    <a href="index.php"><img src="image/lightlogosmall.png"></a>
         <nav>
-            <a>Villa's</a>
-            <a>Contact</a>
+        <a href="villalist.view.php"><strong>Villa's</strong></a>
+            <a href=""><strong>Contact</strong></a>
         </nav>
     </header>
     <main>
