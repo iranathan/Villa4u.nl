@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/headerfooter.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <script src="js/login.js" defer></script>
+    <title>Villa4u</title>
+</head>
+<body>
+    <header>
+        <a href="index.php"><img src="image/lightlogosmall.png"></a>
+        <nav>
+            <a href="villalist.view.php"><strong>Villa's</strong></a>
+            <a href=""><strong>Contact</strong></a>
+            <a href="login.html"><strong>Login</strong></a>
+        </nav>
+    </header>
+    <main>
+        <form id="login" method="post">
+            <div id="parent">
+                <div id="title">
+                    <h2>Login</h2>
+                </div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" class="input">
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" class="input">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" class="input">
+                <label for="password">Re-enter password: </label>
+                <input type="password" name="password" id="password" class="input">
+                <button type="submit" id="submit" class="button">Sign up</button>
+                <img src="image/or_2.png">
+                <button type="submit" class="button" onclick="login()">Login</button>
+
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h2>Contact</h2>
+        <div id="footer-info">
+            <p>Telefoon: <br>06-12345678</p>
+            <p>E-Mail: <br>Villa4U@gmail.com</p>
+            <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
+            <p>Sociale Media: <br>@Villa4U</p>
+        </div>
+    </footer>
+</body>
+</html>

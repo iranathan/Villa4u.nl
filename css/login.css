@@ -1,3 +1,6 @@
+body{
+    background-color: #f5ede5;
+}
 main {
     padding: 10rem;
 }
@@ -5,11 +8,13 @@ main {
 input, label {
     float: left
 }
-
+/* second border around div */
 #login {
     border: 4px solid black;
+    margin-left: 32%;
+    margin-right: 32%;
 }
-
+/* first border around div and div*/
 #parent {
     border: 3px solid #c19b81;
     color: #f4e8da;
@@ -19,12 +24,27 @@ input, label {
     align-content: center;
     padding: 4rem;
     background-color: #302d2c;
+    height: 300px;
 }
+/* buttons */
+#submit{margin-top: 30px;}
 
-#submit {
+.button {
     background-color: #c19b81;
+    border: 4px black;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: #dcd4dcbc
 }
 
 #title {
     text-align: center;
+}
+
+.input{
+    border: 4px black;
+    height: 15px;
 }

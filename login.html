@@ -7,31 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/headerfooter.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <script src="js/login.js" defer></script>
     <title>Villa4u</title>
 </head>
 <body>
     <header>
-        <img src="image/lightlogosmall.png">
+        <a href="index.php"><img src="image/lightlogosmall.png"></a>
         <nav>
-            <a><strong>Villa's</strong></a>
-            <a><strong>Contact</strong></a>
-            <a><strong>Login</strong></a>
+            <a href="villalist.view.php"><strong>Villa's</strong></a>
+            <a href=""><strong>Contact</strong></a>
+            <a href="login.html"><strong>Login</strong></a>
         </nav>
     </header>
     <main>
-        <form id="login">
+        <form id="login" method="post">
             <div id="parent">
                 <div id="title">
                     <h2>Login</h2>
                 </div>
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" class="input">
                 <label for="password">Password: </label>
-                <input type="text" name="password" id="password">
-                <button type="submit" id="submit">Login</button>
+                <input type="password" name="password" id="password" class="input">
+                <button type="submit" id="submit" class="button">Login</button>
+                <img src="image/or_2.png">
+                <button type="submit" class="button" onclick="signup()">Signup</button>
+
             </div>
         </form>
-        <p>Don't have an account? <a href="/signup">Signup</a></p>
     </main>
     <footer>
         <h2>Contact</h2>
