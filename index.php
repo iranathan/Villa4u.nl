@@ -25,7 +25,7 @@
         </div>
     </main>
     <footer>
-        <h1>footer test.</h1>
+        <h1>Wij zijn Villa4u</h1>
     </footer>
 </body>
 </html>
