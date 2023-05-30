@@ -1,0 +1,30 @@
+main {
+    padding: 10rem;
+}
+
+input, label {
+    float: left
+}
+
+#login {
+    border: 4px solid black;
+}
+
+#parent {
+    border: 3px solid #c19b81;
+    color: #f4e8da;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    padding: 4rem;
+    background-color: #302d2c;
+}
+
+#submit {
+    background-color: #c19b81;
+}
+
+#title {
+    text-align: center;
+}
