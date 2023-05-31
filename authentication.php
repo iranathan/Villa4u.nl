@@ -23,12 +23,12 @@ if(check_parameters(["name", "email", "password", "re-password", "auth-type"]) a
     $sql = $db->prepare("SELECT * FROM accounts WHERE accounts.email = :email");
     $sql->bindValue("email", $_POST['email']);
     $res = $sql->execute()->fetchArray();
-    if(!$res) {
+    if($res) {
         echo "Email already in use";
         return;
     }
 
-    $sql = $db->prepare("INSERT INTO accounts (name, email, password) VALUES (:nane, :email, :password)");
+    $sql = $db->prepare("INSERT INTO accounts (name, email, password) VALUES (:name, :email, :password)");
     $sql->bindValue(":name", $_POST["name"]);
     $sql->bindValue(":email", $_POST['email']);
     $sql->bindValue(":password", md5($_POST['password']));
@@ -43,7 +43,7 @@ if(check_parameters(["email", "password", "auth-type"]) and $_POST['auth-type'] 
     // check if email password correct
     $sql = $db->prepare("SELECT * FROM accounts WHERE accounts.email = :email and accounts.password = :password");
     $sql->bindValue(":email", $_POST['email']);
-    $sql->bindValue(":password", $_POST['password']);
+    $sql->bindValue(":password", md5($_POST['password']));
     $res = $sql->execute()->fetchArray();
 
     if(!$res) {
