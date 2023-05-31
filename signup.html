@@ -21,13 +21,13 @@
     </header>
     <main>
         <form id="login" method="post" action="authentication.php">
+            <input type="hidden" name="auth-type" value="signup">
             <div id="parent" class="parent">
                 <div id="title">
                     <h2>Signup</h2>
                 </div>
-                <input type="hidden" name="auth-type" value="signup">
                 <label for="name" id="label">Name: </label>
-                <input type="text" id="name" class="input">
+                <input type="text" id="name" name="name" class="input">
                 <label for="email" id="label">Email: </label>
                 <input type="text" name="email" id="email" class="input">
                 <label for="password" id="label">Password: </label>
@@ -41,14 +41,6 @@
             </div>
         </form>
     </main>
-    <footer>
-        <h2>Contact</h2>
-        <div id="footer-info">
-            <p>Telefoon: <br>06-12345678</p>
-            <p>E-Mail: <br>Villa4U@gmail.com</p>
-            <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
-            <p>Sociale Media: <br>@Villa4U</p>
-        </div>
-    </footer>
+    
 </body>
 </html>
