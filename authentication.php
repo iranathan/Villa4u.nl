@@ -34,6 +34,9 @@ if($_POST["auth-type"] == "signup") {
     $sql->bindValue(":email", $_POST['email']);
     $sql->bindValue(":password", md5($_POST['password']));
     $sql->execute();
+
+    echo "account created";
+    return;
 }
 
 if($_POST["auth-type"] == "login") {
