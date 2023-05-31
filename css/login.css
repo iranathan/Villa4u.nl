@@ -26,6 +26,7 @@ input, label {
     background-color: #302d2c;
     height: 300px;
 }
+
 /* buttons */
 #submit{margin-top: 30px;}
 
@@ -47,4 +48,12 @@ input, label {
 .input{
     border: 4px black;
     height: 15px;
+}
+
+/* signup */
+#label {
+    margin-top: 10px;
+}
+.parent {
+    height: 320px !important;
 }
