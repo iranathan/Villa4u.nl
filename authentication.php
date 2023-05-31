@@ -11,7 +11,7 @@ function check_parameters($arr) {
     }
 }
 
-if($_POST["auth-type"] == "signup") {
+if(isset($_POST['auth-type']) and $_POST["auth-type"] == "signup") {
     check_parameters(["name", "email", "password", "re-password"]);
 
     // check if the password check and password match
@@ -42,5 +42,5 @@ if($_POST["auth-type"] == "signup") {
 if($_POST["auth-type"] == "login") {
     check_parameters(["email", "password"]);
 
-
+    // check if email password correct
 }
