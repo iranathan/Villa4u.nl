@@ -5,7 +5,6 @@ $db = new SQLite3("villa.sqlite");
 function check_parameters($arr) {
     foreach($arr as $required_field) {
         if(!isset($_POST[$required_field])) {
-            echo $required_field;
             return false;
         }
     }
@@ -24,7 +23,7 @@ if(check_parameters(["name", "email", "password", "re-password", "auth-type"]) a
     $sql = $db->prepare("SELECT * FROM accounts WHERE accounts.email = :email");
     $sql->bindValue("email", $_POST['email']);
     $res = $sql->execute()->fetchArray();
-    if(count($res) > 0) {
+    if(!$res) {
         echo "Email already in use";
         return;
     }
@@ -47,12 +46,10 @@ if(check_parameters(["email", "password", "auth-type"]) and $_POST['auth-type'] 
     $sql->bindValue(":password", $_POST['password']);
     $res = $sql->execute()->fetchArray();
 
-    if(count($res) == 0) {
+    if(!$res) {
         echo "Account or email incorrect.";
         return;
     }
 
     echo "Logged in as ".$res["name"];
 }
-
-echo "hello";
