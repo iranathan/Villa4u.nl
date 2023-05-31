@@ -5,15 +5,15 @@ $db = new SQLite3("villa.sqlite");
 function check_parameters($arr) {
     foreach($arr as $required_field) {
         if(!isset($_POST[$required_field])) {
-            echo "Not all parameters were filled";
-            return;
+            echo $required_field;
+            return false;
         }
     }
+    return true;
 }
 
-if(isset($_POST['auth-type']) and $_POST["auth-type"] == "signup") {
-    check_parameters(["name", "email", "password", "re-password"]);
-
+// signup
+if(check_parameters(["name", "email", "password", "re-password", "auth-type"]) and $_POST['auth-type'] == "signup") {
     // check if the password check and password match
     if($_POST['password'] != $_POST['re-password']) {
         echo "Passwords do not match";
@@ -23,8 +23,8 @@ if(isset($_POST['auth-type']) and $_POST["auth-type"] == "signup") {
     // check if email is already in use
     $sql = $db->prepare("SELECT * FROM accounts WHERE accounts.email = :email");
     $sql->bindValue("email", $_POST['email']);
-    $res = $db->querySingle($sql);
-    if(!isset($res)) {
+    $res = $sql->execute()->fetchArray();
+    if(count($res) > 0) {
         echo "Email already in use";
         return;
     }
@@ -39,8 +39,20 @@ if(isset($_POST['auth-type']) and $_POST["auth-type"] == "signup") {
     return;
 }
 
-if($_POST["auth-type"] == "login") {
-    check_parameters(["email", "password"]);
-
+// login
+if(check_parameters(["email", "password", "auth-type"]) and $_POST['auth-type'] == "login") {
     // check if email password correct
+    $sql = $db->prepare("SELECT * FROM accounts WHERE accounts.email = :email and accounts.password = :password");
+    $sql->bindValue(":email", $_POST['email']);
+    $sql->bindValue(":password", $_POST['password']);
+    $res = $sql->execute()->fetchArray();
+
+    if(count($res) == 0) {
+        echo "Account or email incorrect.";
+        return;
+    }
+
+    echo "Logged in as ".$res["name"];
 }
+
+echo "hello";
