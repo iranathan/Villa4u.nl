@@ -20,15 +20,16 @@
         </nav>
     </header>
     <main>
-        <form id="login" method="post">
+        <form id="login" method="post" action="authentication.php">
             <div id="parent">
                 <div id="title">
                     <h2>Login</h2>
                 </div>
+                <input type="hidden" name="auth-type" value="login">
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email" class="input">
+                <input type="text" name="email" id="email" class="input" required>
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password" class="input">
+                <input type="password" name="password" id="password" class="input" required>
                 <button type="submit" id="submit" class="button">Login</button>
                 <img src="image/or_2.png">
                 <button type="submit" class="button" onclick="signup(); return false">Signup</button>

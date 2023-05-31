@@ -11,15 +11,15 @@
 </head>
 <body>
 <header>
-    <a href="index.php"><img src="image/lightlogosmall.png"></a>
+    <a href="index.php"><img src="image/lightlogosmall.png" alt="logo"></a>
     <nav>
-        <a href="villalist.view.php"><strong>Villa's</strong></a>
+        <a href="villalist.php"><strong>Villa's</strong></a>
         <a href=""><strong>Contact</strong></a>
     </nav>
 </header>
 <main>
     <div class="banner">
-        <img src="image/voorbeeldvilla.png" alt="villa" width="100%">
+        <img src="image/voorbeeldvilla.png" alt="villa">
     </div>
     <div class="showcase">
         <div class="description">
