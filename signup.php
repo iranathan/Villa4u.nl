@@ -28,17 +28,21 @@
                     <h2  class="animation">Signup</h2>
                 </div>
                 <label for="name" id="label">Name: </label class="animation">
-                <input type="text" id="name" name="name" class="input" class="animation">
+                <input type="text" id="name" name="name" class="input animation">
                 <label for="email" id="label" class="animation">Email: </label>
-                <input type="text" name="email" id="email" class="input" class="animation">
+                <input type="email" name="email" id="email" class="input animation">
                 <label for="password" id="label" class="animation">Password: </label>
-                <input type="password" name="password" id="password" class="input" class="animation">
+                <input type="password" name="password" id="password" class="input animation" class="animation">
                 <label for="re-password" id="label" class="animation">Re-enter password: </label>
-                <input type="password" name="re-password" id="re-password" class="input" class="animation">
-                <button type="submit" id="submit" class="button" class="animation">Sign up</button>
-                <img src="image/or_2.png" class="animation">
-                <button type="submit" class="button" onclick="login(); return false;" class="animation">Login</button>
-
+                <input type="password" name="re-password" id="re-password" class="input animation">
+                <button type="submit" id="submit" class="button animation">Sign up</button>
+                <img src="image/or_2.png" alt="or" class="animation">
+                <button type="submit" class="button animation" onclick="login(); return false;">Login</button>
+                <?php if(isset($error_message)) : ?>
+                    <span style="color:red"><?= $error_message ?></span>
+                <?php elseif(isset($success_message)) : ?>
+                    <span style="color:green"><?= $success_message ?></span>
+                <?php endif; ?>
             </div>
         </form>
     </main>

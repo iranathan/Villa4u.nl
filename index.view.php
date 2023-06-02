@@ -15,7 +15,11 @@
     <nav>
         <a href="villalist.php"><strong>Villa's</strong></a>
         <a href=""><strong>Contact</strong></a>
-        <a href="login.php"><strong>Login</strong></a>
+        <?php if($authenticated) : ?>
+            <a href="#"><strong><?= $name ?></strong></a>
+        <?php else :?>
+            <a href="login.php"><strong>Login</strong></a>
+        <?php endif;?>
     </nav>
 </header>
 <main>

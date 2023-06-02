@@ -33,9 +33,11 @@
                 <label for="password" class="animation">Password: </label>
                 <input type="password" name="password" id="password" class="input" required class="animation">
                 <button type="submit" id="submit" class="button" class="animation">Login</button>
-                <img src="image/or_2.png" class="animation">
+                <img src="image/or_2.png" alt="or" class="animation">
                 <button type="submit" class="button" onclick="signup(); return false" class="animation">Signup</button>
-
+                <?php if(isset($error_message)) : ?>
+                    <span style="color:red"><?= $error_message ?></span>
+                <?php endif; ?>
             </div>
         </form>
     </main>
