@@ -15,7 +15,7 @@
     <header>
         <a href="index.php"><img src="image/lightlogosmall.png"></a>
         <nav>
-            <a href="villalist.view.php"><strong>Villa's</strong></a>
+            <a href="villalist.php"><strong>Villa's</strong></a>
             <a href=""><strong>Contact</strong></a>
             <a href="login.php"><strong>Login</strong></a>
         </nav>
