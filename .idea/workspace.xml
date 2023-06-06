@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="change imports">
-      <change afterPath="$PROJECT_DIR$/utils/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="import header and footer">
       <change beforePath="$PROJECT_DIR$/villa.php" beforeDir="false" afterPath="$PROJECT_DIR$/villa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/villalist.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <workItem from="1685687492619" duration="6058000" />
       <workItem from="1685700303200" duration="4861000" />
       <workItem from="1685712932212" duration="359000" />
-      <workItem from="1686036895790" duration="4477000" />
+      <workItem from="1686036895790" duration="4949000" />
     </task>
     <task id="LOCAL-00001" summary="villa list and database">
       <created>1681898149149</created>
@@ -204,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686042587494</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="import header and footer">
+      <created>1686043447936</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686043447936</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +236,7 @@
     <MESSAGE value="authenticater and index" />
     <MESSAGE value="contact" />
     <MESSAGE value="change imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="change imports" />
+    <MESSAGE value="import header and footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="import header and footer" />
   </component>
 </project>

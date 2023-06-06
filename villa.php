@@ -1,7 +1,3 @@
-<?php
-require("utils/authenticate.php");
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,29 +11,18 @@ require("utils/authenticate.php");
     <title>Villa4u</title>
 </head>
 <body>
-<header>
-    <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
-    <nav>
-        <a href="villalist.php"><strong>Villa's</strong></a>
-        <a href=""><strong>Contact</strong></a>
-        <?php if($authenticated) : ?>
-            <a href="#"><strong><?= $name ?></strong></a>
-        <?php else :?>
-            <a href="login.php"><strong>Login</strong></a>
-        <?php endif;?>
-    </nav>
-</header>
-<main>
+    <!-- load header -->
+    <?php
+        require("utils/header.php")
+    ?>
 
-</main>
-<footer>
-    <h2>Contact</h2>
-    <div id="footer-info">
-        <p>Telefoon: <br>06-12345678</p>
-        <p>E-Mail: <br>Villa4U@gmail.com</p>
-        <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
-        <p>Sociale Media: <br>@Villa4U</p>
-    </div>
-</footer>
+    <main>
+
+    </main>
+
+    <!-- load footer -->
+    <?php
+    require("utils/footer.php")
+    ?>
 </body>
 </html>
