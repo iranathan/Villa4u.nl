@@ -12,14 +12,12 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="index.php"><img src="image/lightlogosmall.png"></a>
-        <nav>
-            <a href="villalist.view.php"><strong>Villa's</strong></a>
-            <a href=""><strong>Contact</strong></a>
-            <a href="login.php"><strong>Login</strong></a>
-        </nav>
-    </header>
+
+    <!-- load header -->
+    <?php
+        require("utils/header.php");
+    ?>
+
     <main>
         <form id="login" method="post" action="authentication.php">
             <input type="hidden" name="auth-type" value="signup">
@@ -46,6 +44,6 @@
             </div>
         </form>
     </main>
-    
+
 </body>
 </html>
