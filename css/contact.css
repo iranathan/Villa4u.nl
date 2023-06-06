@@ -1,5 +1,7 @@
 main{
     display: block;
+    display: flex;
+    justify-content: center;
 }
 .contact{
     background-color: #302d2c;

@@ -13,18 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="index.php"><img src="image/lightlogosmall.png" alt="logo"></a>
-        <nav>
-            <a href="villalist.php"><strong>Villa's</strong></a>
-            <a href=""><strong>Contact</strong></a>
-            <?php if($authenticated) : ?>
-                <a href="#"><strong><?= $name ?></strong></a>
-            <?php else :?>
-                <a href="login.php"><strong>Login</strong></a>
-            <?php endif;?>
-        </nav>
-    </header>
+    
     <main>
         <div class="contact">
             <form action="post">
@@ -37,18 +26,10 @@
                 <label for="tel" class="tel">Telefoon nummer:</label> <br>
                 <input type="tel" id="tel" name="tel" class="tel"> 
                 <label for="bericht" class="bericht">Uw bericht:</label> <br>
-                <input type="text" id="bericht" name="bericht" lass="bericht"> 
+                <input type="text" id="bericht" name="bericht" class="bericht"> 
             </form>
         </div>
     </main>
-    <footer>
-    <h2>Contact</h2>
-    <div id="footer-info">
-        <p>Telefoon: <br>06-12345678</p>
-        <p>E-Mail: <br>Villa4U@gmail.com</p>
-        <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
-        <p>Sociale Media: <br>@Villa4U</p>
-    </div>
-</footer>
+    
 </body>
 </html>
