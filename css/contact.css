@@ -1,0 +1,29 @@
+main{
+    display: block;
+}
+.contact{
+    background-color: #302d2c;
+    margin: 100px;
+    justify-content: center;
+    height: 500px;
+    width: 800px;
+}
+form{
+    padding: 20px;
+}
+input[type=text], input[type= email], input[type= tel]{
+    background-color: #fffdfb;
+    width: 300px;
+}
+
+label {
+    color: #f4e8da;
+}
+
+.voornaam{
+    display: inline-block;
+}
+
+.achternaam{
+    display: block;
+}
