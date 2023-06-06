@@ -1,5 +1,5 @@
+<!-- load modules -->
 <?php
-    require("utils/authenticate.php");
     require("utils/loadvillas.php");
 ?>
 
@@ -16,38 +16,34 @@
     <title>Villa4u</title>
 </head>
 <body>
-<header>
-    <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
-    <nav>
-        <a href="villalist.php"><strong>Villa's</strong></a>
-        <a href=""><strong>Contact</strong></a>
-        <a href="login.php"><strong>Login</strong></a>
-    </nav>
-</header>
-<main>
-    <?php while($res = $villas->fetchArray()) { ?>
-        <div id="villas">
-            <div class="villa">
-                <div class="villa-title">
-                    <a href="/#"><h1><?= $res['name'] ?></h1></a>
-                    <p><?= $res['description'] ?></p>
-                    <button id="button">Contact</button>
-                </div>
-                <div class="villa-thumbnail">
-                    <img src="image/unnamed.png" alt="villa">
+
+    <!-- load header -->
+    <?php
+        require("utils/header.php")
+    ?>
+
+    <!-- main html -->
+    <main>
+        <?php while($res = $villas->fetchArray()) { ?>
+            <div id="villas">
+                <div class="villa">
+                    <div class="villa-title">
+                        <a href="/#"><h1><?= $res['name'] ?></h1></a>
+                        <p><?= $res['description'] ?></p>
+                        <button id="button">Contact</button>
+                    </div>
+                    <div class="villa-thumbnail">
+                        <img src="image/unnamed.png" alt="villa">
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php } ?>
-</main>
-<footer>
-    <h2>Contact</h2>
-    <div id="footer-info">
-        <p>Telefoon: <br>06-12345678</p>
-        <p>E-Mail: <br>Villa4U@gmail.com</p>
-        <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
-        <p>Sociale Media: <br>@Villa4U</p>
-    </div>
-</footer>
+        <?php } ?>
+    </main>
+
+    <!-- load footer -->
+    <?php
+        require("utils/footer.php")
+    ?>
+
 </body>
 </html>

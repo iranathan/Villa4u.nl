@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="contact">
+    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="change imports">
+      <change afterPath="$PROJECT_DIR$/utils/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/villa.php" beforeDir="false" afterPath="$PROJECT_DIR$/villa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/villalist.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/villalist.view.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +111,7 @@
       <workItem from="1685687492619" duration="6058000" />
       <workItem from="1685700303200" duration="4861000" />
       <workItem from="1685712932212" duration="359000" />
-      <workItem from="1686036895790" duration="3822000" />
+      <workItem from="1686036895790" duration="4477000" />
     </task>
     <task id="LOCAL-00001" summary="villa list and database">
       <created>1681898149149</created>
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686042164775</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change imports">
+      <created>1686042587494</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686042587494</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +232,7 @@
     <MESSAGE value="villa list" />
     <MESSAGE value="authenticater and index" />
     <MESSAGE value="contact" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact" />
+    <MESSAGE value="change imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="change imports" />
   </component>
 </project>

@@ -15,42 +15,33 @@
     <title>Villa4u</title>
 </head>
 <body>
-<header>
-    <a href="index.php"><img src="image/lightlogosmall.png" alt="logo"></a>
-    <nav>
-        <a href="villalist.php"><strong>Villa's</strong></a>
-        <a href="contact.php"><strong>Contact</strong></a>
-        <?php if($authenticated) : ?>
-            <a href="#"><strong><?= $name ?></strong></a>
-        <?php else :?>
-            <a href="login.php"><strong>Login</strong></a>
-        <?php endif;?>
-    </nav>
-</header>
-<main>
-    <div class="banner">
-        <img src="image/voorbeeldvilla.png" alt="villa">
-    </div>
-    <div class="showcase">
-        <div class="description">
-            <h1>Title</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consequuntur expedita laudantium optio quas quia ratione! Aut, expedita.</p>
+
+    <!-- load header -->
+    <?php
+        require("utils/header.php");
+    ?>
+
+    <main>
+        <div class="banner">
+            <img src="image/voorbeeldvilla.png" alt="villa">
         </div>
-        <div class="photos">
-            <div class="frame">
-                <img src="image/unnamed.png" alt="villa preview">
+        <div class="showcase">
+            <div class="description">
+                <h1>Title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consequuntur expedita laudantium optio quas quia ratione! Aut, expedita.</p>
+            </div>
+            <div class="photos">
+                <div class="frame">
+                    <img src="image/unnamed.png" alt="villa preview">
+                </div>
             </div>
         </div>
-    </div>
-</main>
-<footer>
-    <h2>Contact</h2>
-    <div id="footer-info">
-        <p>Telefoon: <br>06-12345678</p>
-        <p>E-Mail: <br>Villa4U@gmail.com</p>
-        <p>Adres: Rotterdam  <br>Heer Bokelweg 255 2414 AB </p>
-        <p>Sociale Media: <br>@Villa4U</p>
-    </div>
-</footer>
+    </main>
+
+    <!-- load footer -->
+    <?php
+        require("utils/footer.php")
+    ?>
+
 </body>
 </html>
