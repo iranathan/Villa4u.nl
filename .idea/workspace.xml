@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="ape gaming">
+    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="villa list">
+      <change afterPath="$PROJECT_DIR$/utils/authenticate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/villalist.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/villalist.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/villalist.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.view.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1685687492619" duration="6058000" />
       <workItem from="1685700303200" duration="4861000" />
       <workItem from="1685712932212" duration="359000" />
-      <workItem from="1686036895790" duration="2448000" />
+      <workItem from="1686036895790" duration="3214000" />
     </task>
     <task id="LOCAL-00001" summary="villa list and database">
       <created>1681898149149</created>
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686040945386</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="villa list">
+      <created>1686041375546</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686041375546</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +207,7 @@
     <MESSAGE value="auth + homepage" />
     <MESSAGE value="auth" />
     <MESSAGE value="ape gaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="ape gaming" />
+    <MESSAGE value="villa list" />
+    <option name="LAST_COMMIT_MESSAGE" value="villa list" />
   </component>
 </project>
