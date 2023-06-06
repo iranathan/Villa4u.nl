@@ -10,4 +10,3 @@ if(isset($villas)) {
 } else {
     echo "No villas";
 }
-include("villalist.view.php");
