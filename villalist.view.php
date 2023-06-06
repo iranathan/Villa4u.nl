@@ -20,17 +20,6 @@
         </nav>
     </header>
     <main>
-        <div id="villas">
-            <div class="villa">
-                <div class="villa-title">
-                    <h1>Villa</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur doloremque, dolores eius illum ipsum minima officiis quo voluptatibus. Harum possimus reiciendis repellendus suscipit tempora.</p>
-                </div>
-                <div class="villa-thumbnail">
-                    <img src="image/unnamed.png" alt="villa">
-                </div>
-            </div>
-        </div>
         <?php while($res = $villas->fetchArray()) { ?>
             <div id="villas">
                 <div class="villa">
