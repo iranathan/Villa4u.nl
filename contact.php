@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/headerfooter.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Document</title>
 </head>
@@ -26,17 +27,17 @@
     </header>
     <main>
         <div class="contact">
-            <form action="">
-                <label for="voornaam">Voornaam:</label>
-                <input type="text" id="voornaam" name="voornaam">
-                <label for="achternaam">Achternaam:</label>
-                <input type="text" id="achternaam" name="achternaam">
-                <label for="e-mail">E-Mail:</label>
-                <input type="email" id="e-mail" name="e-mail">
-                <label for="tel">Telefoon nummer:</label>
-                <input type="tel" id="tel" name="tel">
-                <label for="bericht">Uw bericht:</label>
-                <input type="text" id="bericht" name="bericht">
+            <form action="post">
+                <label for="voornaam" class="voornaam">Voornaam:</label> <br>
+                <input type="text" id="voornaam" name="voornaam" class="voornaam"> 
+                <label for="achternaam" class="achternaam">Achternaam:</label> 
+                <input type="text" id="achternaam" name="achternaam" class="achternaam"> 
+                <label for="e-mail" class="email">E-Mail:</label> <br>
+                <input type="email" id="e-mail" name="e-mail" class="email"> 
+                <label for="tel" class="tel">Telefoon nummer:</label> <br>
+                <input type="tel" id="tel" name="tel" class="tel"> 
+                <label for="bericht" class="bericht">Uw bericht:</label> <br>
+                <input type="text" id="bericht" name="bericht" lass="bericht"> 
             </form>
         </div>
     </main>
