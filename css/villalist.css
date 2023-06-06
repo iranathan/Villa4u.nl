@@ -5,6 +5,10 @@
     padding: 2rem;
 }
 
+.villa-title a {
+    text-decoration: #c19c81 underline;
+}
+
 .villa-title h1 {
     display: block;
     color: #c19c81;
