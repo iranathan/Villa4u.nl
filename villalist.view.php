@@ -37,7 +37,7 @@
                     <div class="villa-title">
                         <a href="/#"><h1><?= $res['name'] ?></h1></a>
                         <p><?= $res['description'] ?></p>
-                        <button>Contact</button>
+                        <button id="button">Contact</button>
                     </div>
                     <div class="villa-thumbnail">
                         <img src="image/unnamed.png" alt="villa">
