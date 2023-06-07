@@ -1,4 +1,7 @@
-
+<?php
+    // authenticate current webpage.
+    require("utils/authenticate.php")
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,23 +16,43 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+        require("utils/header.php");
+    ?>
     <main>
-        <div class="contact">
-            <form action="post">
-                <label for="voornaam" class="voornaam">Voornaam:</label> <br>
-                <input type="text" id="voornaam" name="voornaam" class="voornaam"> 
-                <label for="achternaam" class="achternaam">Achternaam:</label> 
-                <input type="text" id="achternaam" name="achternaam" class="achternaam"> 
-                <label for="e-mail" class="email">E-Mail:</label> <br>
-                <input type="email" id="e-mail" name="e-mail" class="email"> 
-                <label for="tel" class="tel">Telefoon nummer:</label> <br>
-                <input type="tel" id="tel" name="tel" class="tel"> 
-                <label for="bericht" class="bericht">Uw bericht:</label> <br>
-                <input type="text" id="bericht" name="bericht" class="bericht"> 
-            </form>
+        <div class="contact-border">
+            <div class="contact">
+                <h3>Heeft u nog vragen? Vul dit formulier in. Wij beantwoorden zo snel mogelijk!</h3>
+                <form action="post">
+                    <table>
+                        <tr>
+                            <td> <label for="voornaam" class="voornaam">Voornaam:</label></td>
+                            <td> <label for="achternaam" class="achternaam">Achternaam:</label> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="voornaam" name="voornaam" class="voornaam"> </td>
+                            <td><input type="text" id="achternaam" name="achternaam" class="achternaam"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="e-mail" class="email">E-Mail:</label> </td>
+                            <td><label for="tel" class="tel">Telefoon nummer:</label> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="e-mail" name="e-mail" class="email"> </td>
+                            <td><input type="tel" id="tel" name="tel" class="tel"> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="bericht" class="bericht">Uw bericht:</label> </td>
+                        </tr>
+                        </table>
+                        <input type="text" id="bericht" name="bericht" class="bericht"> <br>
+                    <input type="submit" value="Verstuur">
+                </form>
+            </div>
         </div>
     </main>
-    
+    <?php
+        require("utils/footer.php")
+    ?>
 </body>
 </html>

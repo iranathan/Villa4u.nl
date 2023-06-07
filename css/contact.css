@@ -3,19 +3,25 @@ main{
     display: flex;
     justify-content: center;
 }
+.contact-border{
+    margin: 100px;
+    padding: 0;
+    border: #302d2c solid 3px;
+}
 .contact{
     background-color: #302d2c;
-    margin: 100px;
     justify-content: center;
     height: 500px;
     width: 800px;
+    border: #c19c81 solid 3px;
 }
 form{
     padding: 20px;
+    padding-left: 45px;
 }
 input[type=text], input[type= email], input[type= tel]{
     background-color: #fffdfb;
-    width: 300px;
+    width: 320px;
 }
 
 label {
@@ -28,4 +34,26 @@ label {
 
 .achternaam{
     display: block;
+}
+#bericht{
+    width: 690px;
+    height: 200px;
+}
+h3{
+    color: #f4e8da;
+    padding: 10px;
+    padding-left: 45px;
+    padding-bottom: 0px;
+}
+
+table{
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color: #c19c81;
+    width: 100PX;
+    height: 30px;
+    margin: 10px;
+    margin-left: 580px;
 }
