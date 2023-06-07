@@ -51,9 +51,13 @@ table{
 }
 
 input[type="submit"]{
-    background-color: #c19c81;
     width: 100PX;
     height: 30px;
     margin: 10px;
     margin-left: 580px;
+    background-color: #c19b81;
+    border: 4px black;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    transition: 0.3s;
 }
