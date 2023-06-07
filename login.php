@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-        <a href="index.php"><img src="image/lightlogosmall.png"></a>
+        <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
         <nav>
-            <a href="villalist.phpp"><strong>Villa's</strong></a>
+            <a href="villalist.php"><strong>Villa's</strong></a>
             <a href=""><strong>Contact</strong></a>
             <a href="login.php"><strong>Login</strong></a>
         </nav>
@@ -27,14 +27,13 @@
                     <h2 class="animation">Login</h2>
                 </div>
                 <input type="hidden" name="auth-type" value="login" class="animation">
-                <input type="hidden" name="auth-type" value="login" class="animation">
                 <label for="email" class="animation">Email: </label>
-                <input type="text" name="email" id="email" class="input" required class="animation">
+                <input type="text" name="email" id="email" class="input animation" required>
                 <label for="password" class="animation">Password: </label>
-                <input type="password" name="password" id="password" class="input" required class="animation">
-                <button type="submit" id="submit" class="button" class="animation">Login</button>
+                <input type="password" name="password" id="password" class="input animation" required>
+                <button type="submit" id="submit" class="button animation">Login</button>
                 <img src="image/or_2.png" alt="or" class="animation">
-                <button type="submit" class="button" onclick="signup(); return false" class="animation">Signup</button>
+                <button type="submit" class="button animation" onclick="signup(); return false">Signup</button>
                 <?php if(isset($error_message)) : ?>
                     <span style="color:red"><?= $error_message ?></span>
                 <?php endif; ?>

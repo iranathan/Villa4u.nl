@@ -15,7 +15,6 @@
     <title>Villa4u</title>
 </head>
 <body>
-
     <!-- load header -->
     <?php
         require("utils/header.php");
@@ -42,6 +41,5 @@
     <?php
         require("utils/footer.php")
     ?>
-
 </body>
 </html>
