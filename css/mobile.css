@@ -2,8 +2,25 @@
 * {
     margin: 0;
     padding: 0; 
+    max-width: 100%;
   }
-  
+#navscreen {
+  display: none;
+  background-color: #302d2c;
+  text-align: center;
+  padding: 20px;
+  min-height: 89vh;
+  animation: 0.3s ease-out 0s 1 fadein;
+}
+#navscreen a{
+  color: #d6c3ae;
+  text-decoration: none;
+  font-size: 20px;
+  animation: 0.8s ease-out 0s 1 slideInFromLeft;
+}
+
+#content{ 
+}
   
 #nav-icon3 {
     width: 60px;
@@ -76,4 +93,19 @@
     width: 0%;
     left: 50%;
   }
-  
+
+  /* animations for button */
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateY(-9%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+ } 

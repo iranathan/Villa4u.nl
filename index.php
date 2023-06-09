@@ -1,6 +1,17 @@
 <?php
     // authenticate current webpage.
-    require("utils/authenticate.php")
+    require("utils/authenticate.php");
+
+    // to load mobile page
+    $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+    $bberry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+    $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+    $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+    $webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+    if ($android || $bberry || $iphone || $ipod || $webos) 
+    { 
+    header('Location: index_mobile.php');
+    }
 ?>
 
 <!DOCTYPE html>
