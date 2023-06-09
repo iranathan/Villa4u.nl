@@ -16,11 +16,17 @@
 
 .villa-title p {
     padding-right: 2rem;
+    max-width: 90vh;
 }
 
 .villa-thumbnail {
     border: 2px solid black;
-    padding: 1rem;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.villa-thumbnail img {
+    max-width: 450px;
+    min-width: 200px;
 }
 #button{
     background-color: #c19c81;

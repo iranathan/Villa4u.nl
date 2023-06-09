@@ -29,11 +29,14 @@
                 <input type="hidden" name="villa" value="<?=$res['id']?>">
                 <div class="villa-title">
                     <a href="/#"><h1><?= $res['name'] ?></h1></a>
-                    <p><?= $res['description'] ?></p>
+                    <p><?= $res['description'] ?><br>
+                    <?= $res['description0'] ?><br>
+                    <?= $res['description1'] ?></p>
+                    <p><?= $res['price'] ?></p>
                     <button type="submit" id="button">Contact</button>
                 </div>
                 <div class="villa-thumbnail">
-                    <img src="image/unnamed.png" alt="villa">
+                    <img src="<?= $res["photopath"]?>" alt="villa">
                 </div>
             </form>
         <?php } ?>
