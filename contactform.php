@@ -52,9 +52,9 @@
                         </tr>
                         </table>
                         <input type="text" id="bericht" name="bericht" class="bericht" required> <br>
-                    <?php if($success_message) : ?>
+                    <?php if(isset($success_message)) : ?>
                         <span style="color:green;"><?=$success_message?></span>
-                    <?php elseif($error_message) : ?>
+                    <?php elseif(isset($error_message)) : ?>
                         <span style="color:red;"><?=$error_message?></span>
                     <?php endif;?>
                     <input type="submit" value="Verstuur">

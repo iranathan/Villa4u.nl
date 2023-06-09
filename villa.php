@@ -1,3 +1,16 @@
+<?php
+    require("utils/authenticate.php");
+    require("utils/database.php");
+
+    if(isset($_GET['villa'])) {
+        $villa = get_villa($_GET['villa']);
+    } else {
+        echo "bruh";
+        return;
+    }
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,7 +30,7 @@
     ?>
 
     <main>
-
+        <p><?=$villa['name']?></p>
     </main>
 
     <!-- load footer -->
