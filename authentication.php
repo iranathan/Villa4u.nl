@@ -1,25 +1,11 @@
 <?php
+// import functions
+require("utils/functions.php");
+
 // load database
 $db = new SQLite3("villa.sqlite");
 $error_message = null;
 $success_message = null;
-
-function check_parameters($arr): bool
-{
-    foreach($arr as $required_field) {
-        if(!isset($_POST[$required_field])) {
-            return false;
-        }
-    }
-    return true;
-}
-
-
-function str_rand(int $length = 64){ // 64 = 32
-    $length = ($length < 4) ? 4 : $length;
-    return bin2hex(random_bytes(($length-($length%2))/2));
-}
-
 
 // signup
 if(check_parameters(["name", "email", "password", "re-password", "auth-type"]) and $_POST['auth-type'] == "signup") {

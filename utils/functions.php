@@ -1,7 +1,4 @@
 <?php
-// load database
-$db = new SQLite3("villa.sqlite");
-
 // check if an array of parameters is set
 function check_parameters($arr): bool
 {

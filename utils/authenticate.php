@@ -3,6 +3,7 @@
 $db = new SQLite3("villa.sqlite");
 
 // to be set if authenticated
+$id = null;
 $name = null;
 $email = null;
 $authenticated = false;
@@ -29,6 +30,7 @@ if(isset($_COOKIE["VillaToken"])) {
                 $authenticated = true;
                 $name = $info_res["name"];
                 $email = $info_res["email"];
+                $id = $info_res['id'];
             }
         } else {
             // delete expired cookie from database

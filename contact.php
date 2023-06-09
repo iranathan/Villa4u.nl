@@ -1,58 +1,32 @@
 <?php
-    // authenticate current webpage.
-    require("utils/authenticate.php")
-?>
+// import functions and authenticate
+require("utils/functions.php");
+require("utils/authenticate.php");
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/headerfooter.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-        require("utils/header.php");
-    ?>
-    <main>
-        <div class="contact-border">
-            <div class="contact">
-                <h3>Heeft u nog vragen? Vul dit formulier in. Wij beantwoorden zo snel mogelijk!</h3>
-                <form action="post">
-                    <table>
-                        <tr>
-                            <td> <label for="voornaam" class="voornaam">Voornaam:</label></td>
-                            <td> <label for="achternaam" class="achternaam">Achternaam:</label> </td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" id="voornaam" name="voornaam" class="voornaam"> </td>
-                            <td><input type="text" id="achternaam" name="achternaam" class="achternaam"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="e-mail" class="email">E-Mail:</label> </td>
-                            <td><label for="tel" class="tel">Telefoon nummer:</label> </td>
-                        </tr>
-                        <tr>
-                            <td><input type="email" id="e-mail" name="e-mail" class="email"> </td>
-                            <td><input type="tel" id="tel" name="tel" class="tel"> </td>
-                        </tr>
-                        <tr>
-                            <td><label for="bericht" class="bericht">Uw bericht:</label> </td>
-                        </tr>
-                        </table>
-                        <input type="text" id="bericht" name="bericht" class="bericht"> <br>
-                    <input type="submit" value="Verstuur">
-                </form>
-            </div>
-        </div>
-    </main>
-    <?php
-        require("utils/footer.php")
-    ?>
-</body>
-</html>
+// load database
+$db = new SQLite3("villa.sqlite");
+$success_message = null;
+$error_message = null;
+
+// check if user is authenticated.
+if(!$authenticated) {
+    $error_message = "You are not logged in";
+    require("contactform.phpn");
+    return;
+}
+
+if(check_parameters(["voornaam", "achternaam", "e-mail", "tel"])) {
+    // add message to database
+    $sql = $db->prepare("INSERT INTO messages(account_id, first_name, last_name, email, phone_number) VALUES (:aid, :fn, :ln, :email, :pn)");
+    $sql->bindValue(":aid", $id);
+    $sql->bindValue(":fn", $_POST['voornaam']);
+    $sql->bindValue(":ln", $_POST['achternaam']);
+    $sql->bindValue(":email", $_POST['e-mail']);
+    $sql->bindValue(":pn", $_POST['tel']);
+    $sql->execute();
+
+    // redirect to contact page with message
+    $success_message = "Message sent";
+    require("contactform.php");
+    return;
+}
