@@ -9,7 +9,7 @@
     <link href="css/login.css" rel="stylesheet">
     <script src="js/login.js" defer></script>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <title>Villa4u</title>
+    <title>Villas4u</title>
 </head>
 <body>
     <header>

@@ -29,6 +29,7 @@
                 <input type="hidden" name="villa" value="<?=$res['id']?>">
                 <div class="villa-title">
                     <a href="/#"><h1><?= $res['name'] ?></h1></a>
+                    <p id="adres"><strong><?= $res['adres'] ?></strong></p>
                     <p><?= $res['description'] ?><br>
                     <?= $res['description0'] ?><br>
                     <?= $res['description1'] ?></p>
