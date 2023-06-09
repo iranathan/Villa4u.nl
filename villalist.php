@@ -30,9 +30,11 @@
                 <div class="villa-title">
                     <a href="/#"><h1><?= $res['name'] ?></h1></a>
                     <p id="adres"><strong><?= $res['adres'] ?></strong></p>
-                    <p><p><?= $res['description'] ?></p>
-                    <p><?= $res['description0'] ?></p>
-                    <p><?= $res['description1'] ?></p></p>
+                    <p>
+                        <p><?= $res['description'] ?></p>
+                        <p><?= $res['description0'] ?></p>
+                        <p><?= $res['description1'] ?></p>
+                    </p>
                     <p><?= $res['price'] ?></p>
                     <button type="submit" id="button">Contact</button>
                 </div>
