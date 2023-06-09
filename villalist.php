@@ -28,7 +28,7 @@
             <form class="villa" action="contactform.php" method="post">
                 <input type="hidden" name="villa" value="<?=$res['id']?>">
                 <div class="villa-title">
-                    <a href="/#"><h1><?= $res['name'] ?></h1></a>
+                    <a href="villa.php?villa=<?=$res['id']?>"><h1><?= $res['name'] ?></h1></a>
                     <p id="adres"><strong><?= $res['adres'] ?></strong></p>
                     <p>
                         <p><?= $res['description'] ?></p>
