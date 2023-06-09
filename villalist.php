@@ -25,18 +25,17 @@
     <!-- main html -->
     <main>
         <?php while($res = $villas->fetchArray()) { ?>
-            <div id="villas">
-                <div class="villa">
-                    <div class="villa-title">
-                        <a href="/#"><h1><?= $res['name'] ?></h1></a>
-                        <p><?= $res['description'] ?></p>
-                        <button id="button">Contact</button>
-                    </div>
-                    <div class="villa-thumbnail">
-                        <img src="image/unnamed.png" alt="villa">
-                    </div>
+            <form class="villa" action="contact.php" method="post">
+                <input type="hidden" name="villa" value="<?=$res['id']?>">
+                <div class="villa-title">
+                    <a href="/#"><h1><?= $res['name'] ?></h1></a>
+                    <p><?= $res['description'] ?></p>
+                    <button type="submit" id="button">Contact</button>
                 </div>
-            </div>
+                <div class="villa-thumbnail">
+                    <img src="image/unnamed.png" alt="villa">
+                </div>
+            </form>
         <?php } ?>
     </main>
 

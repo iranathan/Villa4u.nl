@@ -24,6 +24,7 @@
             <div class="contact">
                 <h3>Heeft u nog vragen? Vul dit formulier in. Wij beantwoorden zo snel mogelijk!</h3>
                 <form action="post">
+                    <input type="hidden" name="villa" value="<?=$_POST['villa']?>">
                     <table>
                         <tr>
                             <td> <label for="voornaam" class="voornaam">Voornaam:</label></td>
