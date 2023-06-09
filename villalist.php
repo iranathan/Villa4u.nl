@@ -25,7 +25,7 @@
     <!-- main html -->
     <main>
         <?php while($res = $villas->fetchArray()) { ?>
-            <form class="villa" action="contact.php" method="post">
+            <form class="villa" action="contactform.php" method="post">
                 <input type="hidden" name="villa" value="<?=$res['id']?>">
                 <div class="villa-title">
                     <a href="/#"><h1><?= $res['name'] ?></h1></a>

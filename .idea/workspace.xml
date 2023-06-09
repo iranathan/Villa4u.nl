@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="import header and footer">
+    <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="contact">
+      <change afterPath="$PROJECT_DIR$/contactform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication.php" beforeDir="false" afterPath="$PROJECT_DIR$/authentication.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/utils/authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/villa.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/villa.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/villalist.php" beforeDir="false" afterPath="$PROJECT_DIR$/villalist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +117,7 @@
       <workItem from="1685712932212" duration="359000" />
       <workItem from="1686036895790" duration="6200000" />
       <workItem from="1686131293737" duration="338000" />
-      <workItem from="1686295193605" duration="346000" />
+      <workItem from="1686295193605" duration="4648000" />
     </task>
     <task id="LOCAL-00001" summary="villa list and database">
       <created>1681898149149</created>
@@ -218,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686043711028</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="contact">
+      <created>1686295584213</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686295584213</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,9 +258,9 @@
     <MESSAGE value="ape gaming" />
     <MESSAGE value="villa list" />
     <MESSAGE value="authenticater and index" />
-    <MESSAGE value="contact" />
     <MESSAGE value="change imports" />
     <MESSAGE value="import header and footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="import header and footer" />
+    <MESSAGE value="contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact" />
   </component>
 </project>
