@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/villalist.css">
+    <link rel="stylesheet" href="css/villa.css">
     <title>Villa4u</title>
 </head>
 <body>
@@ -30,7 +31,10 @@
     ?>
 
     <main>
-        <p><?=$villa['name']?></p>
+        <h1><?=$villa['name']?></h1>
+        <div class="img">
+            <img src="<?=$villa['photopath']?>" alt="">
+        </div>
     </main>
 
     <!-- load footer -->

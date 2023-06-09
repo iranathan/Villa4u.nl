@@ -1,0 +1,16 @@
+main h1{
+    color: #c19c81;
+    text-align: center;
+
+}
+main{
+    padding-left: 20px;
+}
+main img{
+    width: 80vh;
+}
+.img{
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 5px;
+}
