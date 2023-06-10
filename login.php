@@ -35,7 +35,7 @@
                 <img src="image/or_2.png" alt="or" class="animation">
                 <button type="submit" class="button animation" onclick="signup(); return false">Signup</button>
                 <?php if(isset($error_message)) : ?>
-                    <span style="color:red"><?= $error_message ?></span>
+                    <p style="color:red"><?= $error_message ?></p>
                 <?php endif; ?>
             </div>
         </form>

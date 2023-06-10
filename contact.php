@@ -11,8 +11,8 @@ $error_message = null;
 // check if user is authenticated.
 if(!$authenticated) {
     $error_message = "You are not logged in";
-    require("contactform.phpn");
-    return;
+    require("contactform.php");
+    return; 
 }
 
 if(check_parameters(["voornaam", "achternaam", "e-mail", "tel"])) {
