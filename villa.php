@@ -30,9 +30,24 @@
     ?>
 
     <main>
-        <h1><?=$villa['name']?></h1>
-        <div class="img">
-            <img src="<?=$villa['photopath']?>" alt="">
+        <div class="flexbox">
+            <div class="img">
+                <img src="<?=$villa['photopath']?>" alt="">
+            </div>
+            <div class="text">
+                <h1><?=$villa['name']?></h1>
+                <p><?=$villa['description']?></p>         
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="info">
+                    <p><img src="image/info/bedroom.png" alt="Kamer"> Kamers: <?=$villa['rooms']?></p>
+                    <p><img src="image/info/bathroom.png" alt="Badkamer"> Badkamers: <?=$villa['bathrooms']?></p>
+                    <p><img src="image/info/heat.png" alt="Verwarming"> Verwarming: <?=$villa['temp']?></p>
+                    <p><img src="image/info/price.png" alt="Prijs"> Prijs: <?=$villa['price']?></p>
+                    <p><img src="image/info/location.png" alt="Adres"> Adres: <?=$villa['adres']?></p>
+                    <p><img src="image/info/m3.png" alt="Opp.vlakte huis"> Oppervlakte huis<?=$villa['size']?></p>
+                </div>   
         </div>
     </main>
 

@@ -5,6 +5,7 @@ main h1{
 }
 main{
     padding-left: 20px;
+    padding-right: 20px;
 }
 main img{
     width: 80vh;
@@ -13,4 +14,31 @@ main img{
     border: 2px solid black;
     padding: 10px;
     padding-bottom: 5px;
+}
+
+.flexbox{
+    display: flex;
+    margin-top: 40px;
+}
+.text h1{
+    color: #c19c81;
+    text-align: center;
+}
+.text{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* info met afbeeldingen */
+.info {
+    text-align: left;
+}
+.info p{
+    margin-top: 10px;
+}
+.info p img{
+    max-width: 40px;
+    margin-bottom: -9px;
+    margin-right: 10px;
 }
