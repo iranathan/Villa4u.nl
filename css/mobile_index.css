@@ -1,10 +1,70 @@
+body {
+    margin: 0;
+    max-width: 100%;
+}
 .wrapper {
     height: 100vh;
 }
 section {
-    height: 100vh;
+    min-height: 100vh;
+    text-align: center;
 }
 .image {
-    width: 98%;
-    border: 1px black solid;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 3px;
+    width: 92%;
+    border: 2px black solid;
 }
+.image img {
+    width: 90vw;
+    margin-top: 5px;
+}
+#space {
+    height: 2vh
+}
+.text {
+    min-height: 60vh;
+    padding: 5px;
+}
+.text p {
+    margin-top: 8px;
+}
+/* arrow */
+.arrow {
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+    margin-left: 15px;
+  }
+  
+  .arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  

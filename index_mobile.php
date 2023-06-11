@@ -45,11 +45,21 @@
 
 <!-- content -->
     <div class="wrapper">
+        
         <?php while($res = $villas->fetchArray()) { ?>
             <section id="content">
+            <div id="space"></div>
                 <div class="image">
                     <img src="<?=$res["photopath"]?>" alt="">
                 </div>
+                <div class="text">
+                    <h1><?=$res["name"]?></h1>
+                    <p><?=$res["description"]?></p>
+                    <p><?=$res["description0"]?></p>
+                    <p><?=$res["description1"]?></p>
+                    <div class="arrow"></div>
+                </div>
+                
             </section>
         <?php } ?>
     </div>
