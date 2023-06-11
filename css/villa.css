@@ -14,6 +14,10 @@ main img{
     border: 2px solid black;
     padding: 10px;
     padding-bottom: 5px;
+    max-height: 400px;
+}
+.img img{
+    height: 99%;
 }
 
 .flexbox{
@@ -30,7 +34,12 @@ main img{
     text-align: center;
 }
 
-/* info met afbeeldingen */
+/* tweede flexbox */
+.flexbox1{
+    display: flex;
+    margin-top: 40px;
+}
+/* info met icons */
 .info {
     text-align: left;
 }
@@ -41,4 +50,8 @@ main img{
     max-width: 40px;
     margin-bottom: -9px;
     margin-right: 10px;
+}
+
+.infotext{
+    color: #c19c81;
 }

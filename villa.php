@@ -36,17 +36,21 @@
             </div>
             <div class="text">
                 <h1><?=$villa['name']?></h1>
-                <p><?=$villa['description']?></p>         
+                <p>
+                    <p><?= $villa['description'] ?></p>
+                    <p><?= $villa['description0'] ?></p>
+                    <p><?= $villa['description1'] ?></p>
+                </p>        
             </div>
         </div>
-        <div class="flexbox">
+        <div class="flexbox1">
             <div class="info">
-                    <p><img src="image/info/bedroom.png" alt="Kamer"> Kamers: <?=$villa['rooms']?></p>
-                    <p><img src="image/info/bathroom.png" alt="Badkamer"> Badkamers: <?=$villa['bathrooms']?></p>
-                    <p><img src="image/info/heat.png" alt="Verwarming"> Verwarming: <?=$villa['temp']?></p>
-                    <p><img src="image/info/price.png" alt="Prijs"> Prijs: <?=$villa['price']?></p>
-                    <p><img src="image/info/location.png" alt="Adres"> Adres: <?=$villa['adres']?></p>
-                    <p><img src="image/info/m3.png" alt="Opp.vlakte huis"> Oppervlakte huis<?=$villa['size']?></p>
+                    <p><img src="image/info/bedroom.png" alt="Kamer"> <a class="infotext">Kamers: </a><?=$villa['rooms']?></p>
+                    <p><img src="image/info/bathroom.png" alt="Badkamer"> <a class="infotext">Badkamers: </a><?=$villa['bathrooms']?></p>
+                    <p><img src="image/info/heat.png" alt="Verwarming"> <a class="infotext">Verwarming: </a><?=$villa['temp']?></p>
+                    <p><img src="image/info/price.png" alt="Prijs"> <a class="infotext">Prijs: </a><?=$villa['price']?></p>
+                    <p><img src="image/info/location.png" alt="Adres"> <a class="infotext">Adres: </a><?=$villa['adres']?></p>
+                    <p><img src="image/info/m3.png" alt="Opp.vlakte huis"> <a class="infotext">Oppervlakte huis: </a><?=$villa['size']?></p>
                 </div>   
         </div>
     </main>
