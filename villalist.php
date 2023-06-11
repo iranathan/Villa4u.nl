@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/headerfooter.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/villalist.css">
-    <title>Villa4u</title>
+    <title>Villas4u</title>
 </head>
 <body>
 

@@ -23,7 +23,7 @@
     <link href="css/headerfooter.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <title>Villa4u</title>
+    <title>Villas4u</title>
 </head>
 <body>
     <!-- load header -->

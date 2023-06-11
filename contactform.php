@@ -20,7 +20,7 @@
     <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Villas4u</title>
 </head>
 <body>
     <?php

@@ -10,12 +10,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="../js/mobile.js" defer></script>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/mobile_index.css">
 </head>
 <body>
+<!-- load modules -->
     <?php
         require("utils/authenticate.php");
+        require("utils/loadvillas.php");
     ?>
-
+<!-- navbar -->
     <header id="header">
         <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
         <nav>
@@ -27,8 +30,9 @@
                 <span></span>
             </div>
         </nav>
-        
     </header>
+
+<!-- navbar hamburger overlay -->
     <div id="navscreen">
             <a href="villalist.php"><strong>Villa's</strong></a><br><br>
             <a href="contact.php"><strong>Contact</strong></a><br><br>
@@ -38,8 +42,15 @@
                 <a href="login.php"><strong>Login</strong></a><br><br>
             <?php endif;?>
     </div>
+
+<!-- content -->
     <div id="content">
-        <img src="image/voorbeeldvilla.png" alt="villa">
+        <div class="slideshow-container">
+            <?php while($res = $villas->fetchArray()) {?>
+                <img class="slideshow-image" src="<?php $villa["photopath"]; ?>" alt="Slideshow Image">
+            <?php } ?>
+        </div>
     </div>
+
 </body>
 </html>
