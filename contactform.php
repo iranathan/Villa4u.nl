@@ -2,9 +2,11 @@
     // authenticate current webpage.
     require("utils/authenticate.php");
 
+    $alertMessage = "Log in om verder te gaan.";
+
     if(!$authenticated) {
-        header("Location: login.php");
-        die();
+        header("Location: login.php?alert=" . urlencode($alertMessage));
+        exit();
     }
 ?>
 

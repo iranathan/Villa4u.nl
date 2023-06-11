@@ -20,6 +20,16 @@
             <a href="login.php"><strong>Login</strong></a>
         </nav>
     </header>
+    <script>
+    // Krijgt info van contactform om alert te creëren  
+    const urlParams = new URLSearchParams(window.location.search);
+    const alertMessage = urlParams.get('alert');
+
+    // Laat de alert message zien
+    if (alertMessage) {
+      alert(alertMessage);
+    }
+  </script>
     <main>
         <form id="login" method="post" action="authentication.php">
             <div id="parent">

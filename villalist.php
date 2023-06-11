@@ -36,7 +36,7 @@
                         <p><?= $res['description1'] ?></p>
                     </p>
                     <p><?= $res['price'] ?></p>
-                    <button type="submit" id="button">Contact</button>
+                    <button type="submit" name="submit" id="button">Contact</button>
                 </div>
                 <div class="villa-thumbnail">
                     <img src="<?= $res["photopath"]?>" alt="villa">
