@@ -13,11 +13,10 @@ main img{
 .img{
     border: 2px solid black;
     padding: 10px;
-    padding-bottom: 5px;
     max-height: 400px;
 }
 .img img{
-    height: 99%;
+    height: 100%;
 }
 
 .flexbox{
@@ -29,8 +28,9 @@ main img{
     text-align: center;
 }
 .text{
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
 }
 
