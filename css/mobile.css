@@ -3,6 +3,9 @@
     padding: 0; 
     max-width: 100%;
   }
+header{
+  position: unset !important;
+}
 #navscreen {
   display: none;
   background-color: #302d2c;

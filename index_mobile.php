@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Villas4u</title>
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/headerfooter.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -44,13 +44,15 @@
     </div>
 
 <!-- content -->
-    <div id="content">
-        <div class="slideshow-container">
-            <?php while($res = $villas->fetchArray()) {?>
-                <img class="slideshow-image" src="<?php $villa["photopath"]; ?>" alt="Slideshow Image">
-            <?php } ?>
-        </div>
+    <div class="wrapper">
+        <?php while($res = $villas->fetchArray()) { ?>
+            <section id="content">
+                <div class="image">
+                    <img src="<?=$res["photopath"]?>" alt="">
+                </div>
+            </section>
+        <?php } ?>
     </div>
-
+    <script src="js/snap-scroll.js"></script>
 </body>
 </html>
