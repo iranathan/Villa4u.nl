@@ -1,7 +1,5 @@
-body {
-    margin: 0;
-    max-width: 100%;
-}
+
+/* divs */
 .wrapper {
     height: 100vh;
 }
@@ -9,6 +7,8 @@ section {
     min-height: 100vh;
     text-align: center;
 }
+
+/* villa image */
 .image {
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -20,6 +20,8 @@ section {
     width: 90vw;
     margin-top: 5px;
 }
+
+/* text + white space */
 #space {
     height: 2vh
 }
@@ -30,31 +32,13 @@ section {
 .text p {
     margin-top: 8px;
 }
+
+
 /* arrow */
-.arrow {
-    position: absolute;
-    top: calc(100vh - 80px);
-    left: calc(50% - 14px);
-    width: 0;
-    height: 30px;
-    border: 2px solid;
-    border-radius: 2px;
-    animation: jumpInfinite 1.5s infinite;
-    margin-left: 15px;
-  }
-  
-  .arrow:after {
-    content: " ";
-    position: absolute;
-    top: 12px;
-    left: -10px;
-    width: 16px;
-    height: 16px;
-    border-bottom: 4px solid;
-    border-right: 4px solid;
-    border-radius: 4px;
-    transform: rotateZ(45deg);
-  }
+#arrow {
+    animation: jumpInfinite 1s infinite;
+    width: 50px;
+}
   
   @keyframes jumpInfinite {
     0% {

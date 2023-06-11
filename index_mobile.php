@@ -23,7 +23,7 @@
         <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
         <nav>
             
-            <div id="nav-icon3" onclick="open1()">
+            <div id="nav-icon3" onclick="open1(), handleClick()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -57,7 +57,7 @@
                     <p><?=$res["description"]?></p>
                     <p><?=$res["description0"]?></p>
                     <p><?=$res["description1"]?></p>
-                    <div class="arrow"></div>
+                    <img id="arrow" src="<?=$res["arrow"]?>" alt="">
                 </div>
                 
             </section>
