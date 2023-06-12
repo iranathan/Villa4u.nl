@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\Users\irana\OneDrive\Documents\GitHub\Villa4u.nl\villa.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="villa [2]" uuid="d61e14ad-f309-487d-840a-a8266c812985">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/villa.sqlite</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

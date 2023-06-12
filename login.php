@@ -26,8 +26,8 @@
     const alertMessage = urlParams.get('alert');
 
     // Laat de alert message zien
-    if (alertMessage) {
-      alert(alertMessage);
+    if (alertMessage === "true") {
+      alert("Log in om verder te gaan.");
     }
   </script>
     <main>
