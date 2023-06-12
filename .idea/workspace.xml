@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f759945-b3be-4ea0-a00e-c72130d14310" name="Changes" comment="contact">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec79d070-326a-4452-9646-e54a83189670.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +114,7 @@
       <workItem from="1686295193605" duration="4648000" />
       <workItem from="1686344186333" duration="2843000" />
       <workItem from="1686554717587" duration="55000" />
+      <workItem from="1686569447456" duration="547000" />
     </task>
     <task id="LOCAL-00001" summary="villa list and database">
       <created>1681898149149</created>

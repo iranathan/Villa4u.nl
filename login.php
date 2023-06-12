@@ -10,26 +10,23 @@
     <script src="js/login.js" defer></script>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Villas4u</title>
+    <script>
+        // Krijgt info van contactform om alert te creëren
+        const urlParams = new URLSearchParams(window.location.search);
+        const alertMessage = urlParams.get('alert');
+
+        // Laat de alert message zien
+        if (alertMessage === "true") {
+            alert("Log in om verder te gaan.");
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <a href="index.php"><img alt="logo" src="image/lightlogosmall.png"></a>
-        <nav>
-            <a href="villalist.php"><strong>Villa's</strong></a>
-            <a href=""><strong>Contact</strong></a>
-            <a href="login.php"><strong>Login</strong></a>
-        </nav>
-    </header>
-    <script>
-    // Krijgt info van contactform om alert te creëren  
-    const urlParams = new URLSearchParams(window.location.search);
-    const alertMessage = urlParams.get('alert');
 
-    // Laat de alert message zien
-    if (alertMessage === "true") {
-      alert("Log in om verder te gaan.");
-    }
-  </script>
+    <!-- load header -->
+    <?php
+        require("utils/header.php")
+    ?>
     <main>
         <form id="login" method="post" action="authentication.php">
             <div id="parent">

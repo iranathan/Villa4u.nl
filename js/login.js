@@ -1,6 +1,6 @@
 function login(){
-    window.location.href="/login.php"
+    window.location.href="../login.php"
 }
 function signup(){
-    window.location.href="/signup.php"
+    window.location.href="../signup.php"
 }
