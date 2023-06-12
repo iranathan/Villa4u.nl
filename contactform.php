@@ -5,7 +5,7 @@
     $alertMessage = "Log in om verder te gaan.";
 
     if(!$authenticated) {
-        header("Location: login.php?alert=" . urlencode($alertMessage));
+        header("Location: login.php?alert=true");
         exit();
     }
 ?>
