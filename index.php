@@ -48,7 +48,7 @@
                     </div>
                     <div class="photos">
                         <div class="frame">
-                            <img src="<?=$res['thumbnail']?>" alt="villa preview">
+                            <img src="<?=$res['photopath']?>" alt="villa preview">
                         </div>
                     </div>
                 </div>

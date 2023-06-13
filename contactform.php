@@ -1,13 +1,6 @@
 <?php
     // authenticate current webpage.
     require("utils/authenticate.php");
-
-    $alertMessage = "Log in om verder te gaan.";
-
-    if(!$authenticated) {
-        header("Location: login.php?alert=true");
-        exit();
-    }
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +24,9 @@
             <div class="contact">
                 <h3>Heeft u nog vragen? Vul dit formulier in. Wij beantwoorden zo snel mogelijk!</h3>
                 <form method="post" action="contact.php">
-                    <input type="hidden" name="villa" value="<?=$_POST['villa']?>">
+                    <?php if(isset($_POST['villa'])) : ?>
+                        <input type="hidden" name="villa" value="<?=$_POST['villa']?>">
+                    <?php endif; ?>
                     <table>
                         <tr>
                             <td> <label for="voornaam" class="voornaam">Voornaam:</label></td>
@@ -46,20 +41,24 @@
                             <td><label for="tel" class="tel">Telefoon nummer:</label> </td>
                         </tr>
                         <tr>
-                            <td><input type="email" id="e-mail" name="e-mail" class="email" required> </td>
+                            <?php if(isset($email)) : ?>
+                                <td><input type="email" id="e-mail" name="e-mail" class="email" value="<?=$email?>" required> </td>
+                            <?php else : ?>
+                                <td><input type="email" id="e-mail" name="e-mail" class="email" required> </td>
+                            <?php endif; ?>
                             <td><input type="tel" id="tel" name="tel" class="tel" required> </td>
                         </tr>
                         <tr>
                             <td><label for="bericht" class="bericht">Uw bericht:</label> </td>
                         </tr>
-                        </table>
-                        <input type="text" id="bericht" name="bericht" class="bericht" required> <br>
-                        <!-- load error or success message -->
-                        <?php if(isset($success_message)) : ?>
-                            <span style="color:green;"><?=$success_message?></span>
-                        <?php elseif(isset($error_message)) : ?>
-                            <span style="color:red;"><?=$error_message?></span>
-                        <?php endif;?>
+                    </table>
+                    <input type="text" id="bericht" name="bericht" class="bericht" required> <br>
+                    <!-- load error or success message -->
+                    <?php if(isset($success_message)) : ?>
+                        <span style="color:green;"><?=$success_message?></span>
+                    <?php elseif(isset($error_message)) : ?>
+                        <span style="color:red;"><?=$error_message?></span>
+                    <?php endif;?>
                     <input type="submit" value="Verstuur">
                 </form>
             </div>

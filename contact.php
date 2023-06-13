@@ -5,15 +5,6 @@ require("utils/authenticate.php");
 
 // load database
 $db = new SQLite3("villa.sqlite");
-$success_message = null;
-$error_message = null;
-
-// check if user is authenticated.
-if(!$authenticated) {
-    $error_message = "You are not logged in";
-    require("contactform.php");
-    return; 
-}
 
 if(check_parameters(["voornaam", "achternaam", "e-mail", "tel"])) {
     // add message to database
