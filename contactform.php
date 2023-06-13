@@ -54,11 +54,12 @@
                         </tr>
                         </table>
                         <input type="text" id="bericht" name="bericht" class="bericht" required> <br>
-                    <?php if(isset($success_message)) : ?>
-                        <span style="color:green;"><?=$success_message?></span>
-                    <?php elseif(isset($error_message)) : ?>
-                        <span style="color:red;"><?=$error_message?></span>
-                    <?php endif;?>
+                        <!-- load error or success message -->
+                        <?php if(isset($success_message)) : ?>
+                            <span style="color:green;"><?=$success_message?></span>
+                        <?php elseif(isset($error_message)) : ?>
+                            <span style="color:red;"><?=$error_message?></span>
+                        <?php endif;?>
                     <input type="submit" value="Verstuur">
                 </form>
             </div>

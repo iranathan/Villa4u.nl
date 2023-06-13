@@ -1,6 +1,8 @@
 <?php
     // authenticate current webpage.
     require("utils/authenticate.php");
+    // load villas.
+    require("utils/loadvillas.php");
 
     // to load mobile page
     $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
@@ -10,7 +12,7 @@
     $webos = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
     if ($android || $bberry || $iphone || $ipod || $webos) 
     { 
-    header('Location: index_mobile.php');
+        header('Location: index_mobile.php');
     }
 ?>
 
@@ -23,6 +25,8 @@
     <link href="css/headerfooter.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <title>Villas4u</title>
 </head>
 <body>
@@ -32,20 +36,24 @@
     ?>
 
     <main>
-        <div class="banner">
-            <img src="image/voorbeeldvilla.png" alt="villa">
-        </div>
-        <div class="showcase">
-            <div class="description">
-                <h1>Title</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consequuntur expedita laudantium optio quas quia ratione! Aut, expedita.</p>
-            </div>
-            <div class="photos">
-                <div class="frame">
-                    <img src="image/unnamed.png" alt="villa preview">
+        <?php while($res = $villas->fetchArray()) { ?>
+            <div class="hidden villa">
+                <div class="banner">
+                    <img src="<?=$res['banner']?>" alt="villa">
+                </div>
+                <div class="showcase">
+                    <div class="description">
+                        <h1><?=$res['name']?></h1>
+                        <p><?=$res['description']?></p>
+                    </div>
+                    <div class="photos">
+                        <div class="frame">
+                            <img src="<?=$res['thumbnail']?>" alt="villa preview">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php } ?>
     </main>
 
     <!-- load footer -->
