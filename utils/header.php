@@ -8,7 +8,7 @@
         <a href="villalist.php"><strong>Villa's</strong></a>
         <a href="contactform.php"><strong>Contact</strong></a>
         <?php if($authenticated) : ?>
-            <a href="#"><strong><?= $name ?></strong></a>
+            <a title="logout" href="logout.php"><strong><?= $name ?></strong></a>
         <?php else :?>
             <a href="login.php"><strong>Login</strong></a>
         <?php endif;?>

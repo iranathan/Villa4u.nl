@@ -34,7 +34,7 @@ if(check_parameters(["name", "email", "password", "re-password", "auth-type"]) a
     $sql->execute();
 
     // notify user their account has been created.
-    $success_message = "Account created successfully.";
+    $success_message = "Account created successfully. Please login.";
     require "signup.php";
     return;
 }
@@ -68,6 +68,6 @@ if(check_parameters(["email", "password", "auth-type"]) and $_POST['auth-type'] 
     setcookie("VillaToken", $session, $timestamp);
 
     // redirect to home page
-    require "index.php";
+    header("location: index.php");
     return;
 }
