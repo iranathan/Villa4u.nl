@@ -34,7 +34,7 @@
 
 <!-- navbar hamburger overlay -->
     <div id="navscreen">
-            <a href="villalist.php"><strong>Villa's</strong></a><br><br>
+            <a href=""><strong>Villa's</strong></a><br><br>
             <a href="contact.php"><strong>Contact</strong></a><br><br>
             <?php if($authenticated) : ?>
                 <a href="#"><strong><?= $name ?></strong></a><br><br>

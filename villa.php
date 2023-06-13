@@ -53,6 +53,12 @@
                     <p><img src="image/info/location.png" alt="Adres"> <a class="infotext">Adres: </a><?=$villa['adres']?></p>
                     <p><img src="image/info/m3.png" alt="Opp.vlakte huis"> <a class="infotext">Oppervlakte huis: </a><?=$villa['size']?></p>
                 </div>   
+            <div class="images">
+                <img src="<?=$villa['img1']?>" alt="">
+                <img src="<?=$villa['img2']?>" alt="">
+                <img src="<?=$villa['img3']?>" alt="">
+                <img src="<?=$villa['img4']?>" alt="">
+            </div>
         </div>
     </main>
 

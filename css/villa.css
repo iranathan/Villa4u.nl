@@ -55,3 +55,7 @@ main img{
 .infotext{
     color: #c19c81;
 }
+.images {
+    display: flex;
+    max-width: 50%;
+}

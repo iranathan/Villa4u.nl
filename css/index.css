@@ -14,6 +14,7 @@ main {
 }
 
 .frame {
+    margin-left: 20%;
     border: 3px solid black;
     padding: 0.4rem;
     display: flex;
